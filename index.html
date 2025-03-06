@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Berke Kurt Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -45,7 +46,7 @@
             <h1 class="title">Berke Kurt</h1>
             <p class="section__text__p2">AI and Data Engineering Student</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                      Download CV
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -93,12 +94,11 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nam illum, distinctio aspernatur beatae natus, in labore nihil perferendis sit quam, 
-                        consectetur eligendi asperiores a? Nostrum, optio. 
-                        Consequuntur officiis reiciendis sunt eius quo quod aliquam distinctio 
-                        reprehenderit dolorem deserunt at placeat dolorum, 
-                        corporis soluta cum iure ratione eos illum ab illo!</p>
+                    <p> Welcome to my personal website! 👋
+                        I am Berke Kurt, an Artificial Intelligence and Data Engineering undergraduate at Istanbul Technical University. 
+                        My academic journey has been fueled by a deep passion for exploring the transformative potential of AI, 
+                        particularly in the realm of deep learning. I constantly engage in creating personal projects and conducting independent studies to deepen my understanding.
+                        Feel free to explore my work, and don't hesitate to reach out—I'd be thrilled to connect and explore how we can create something amazing together!</p>
                 </div>
             </div>
         </div>
@@ -222,12 +222,12 @@
                     style="width: 70%; height: 70%;"
                     />
                 </div>
-                <h2 class="experience-sub-title project-title">Next Purchase Prediction with XGBoost</h2>
-                <p class="project-description">A Kaggle Competition on the synthetic data of transactions for 9 months. I learned key data mining concepts including:</p>
+                <h2 class="experience-sub-title project-title">Predictive Analytics for E-commerce Product Replenishment</h2>
+                <p class="project-description">A project aimed at forecasting customer repurchase timing in e-commerce using machine learning techniques. Key innovations include:</p>
                 <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
-                    <li>Feature engineering for time-series data</li>
-                    <li>Gradient boosting optimization</li>
-                    <li>Customer behavior modeling</li>
+                    <li>Utilization of XGBoost and CatBoost models for predicting repurchase windows.</li>
+                    <li>Advanced feature engineering, including temporal analysis and product grouping via Jaccard similarity.</li>
+                    <li>Application of over 1 million transactional records to optimize inventory management and supply chain operations.</li>
                 </ul>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" style="width: 6rem; padding: 0.7rem;" onclick="location.href='https://github.com/beekurt/next-purchase-prediction'">
@@ -245,11 +245,12 @@
                     />
                 </div>
                 <h2 class="experience-sub-title project-title">Emotion Representation in TTS Models</h2>
-                <p class="project-description">A project focused on improving human-like speech synthesis by injecting emotion into Text-to-Speech (TTS) systems. Key innovations include:</p>
+                <p class="project-description">A project focused on improving the emotional expressiveness of Text-to-Speech (TTS) systems by integrating emotion embeddings into the synthesis pipeline. Key innovations include:</p>
                 <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
-                    <li>Integration of emotion embeddings into StyleTTS2 for expressive speech generation.</li>
-                    <li>Use of advanced emotion classifiers (Wav2Vec2) to refine emotional accuracy.</li>
+                    <li>Leveraging StyleTTS2's diffusion-based architecture to generate high-quality, emotionally stable speech.</li>
+                    <li>Incorporating an emotion discriminator trained on datasets like RAVDESS to refine emotional accuracy in synthesized audio.</li>
                     <li>Application of diverse datasets (RAVDESS, LibriTTS) for robust emotional modeling.</li>
+                    <li>Introducing emotion labels into the TTS pipeline and optimizing their integration using cross-entropy loss to enhance emotional fidelity in synthesized speech.</li>
                 </ul>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" style="width: 6rem; padding: 0.7rem;" onclick="location.href='https://github.com/beekurt/emotion-tts'">
@@ -267,11 +268,11 @@
                     />
                 </div>
                 <h2 class="experience-sub-title project-title">Database Design and Implementation</h2>
-                <p class="project-description">Designed and implemented a comprehensive database system using Swagger with focus on:</p>
+                <p class="project-description">A project aimed at designing a robust database system for music streaming platforms to manage vast amounts of data related to artists, albums, songs, playlists, and user interactions. Key features include:</p>
                 <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
-                    <li>Normalized schema design</li>
-                    <li>RESTful API integration</li>
-                    <li>Performance optimization techniques</li>
+                    <li>Development of a RESTful API using Flask-RESTX with SQLite backend, JWT-based authentication, and modular architecture for secure and efficient data management.</li>
+                    <li>Comprehensive CRUD operations for managing entities like users, playlists, songs, and albums, ensuring seamless interaction with the database.</li>
+                    <li>Integration of advanced relational modeling to maintain data integrity and enable complex queries like tracking user engagement or calculating total listening time per album.</li>
                 </ul>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" style="width: 6rem; padding: 0.7rem;" onclick="location.href='https://github.com/beekurt/database-design'">
