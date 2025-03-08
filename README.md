@@ -2,6 +2,10 @@
 
 A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. This portfolio showcases my professional background, areas of interest, and projects in an elegant and user-friendly design.
 
+## 🌐 Live Demo
+
+Visit the live website at: [berkekurt.com](https://berkekurt.com)
+
 ## 🌟 Features
 
 - **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
