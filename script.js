@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', initCarousel);
 
 let touchStartX = 0;
 let touchEndX = 0;
-let isSwiping = false;
 
 function handleSwipe() {
     const swipeThreshold = 50; // Minimum swipe distance in pixels
@@ -123,32 +122,27 @@ function handleSwipe() {
             moveCarousel(-1);
         }
     }
+    
+    // Reset values after handling
+    touchStartX = 0;
+    touchEndX = 0;
 }
 
 function initTouchSwipe() {
-    const track = document.querySelector('.carousel-track');
+    // Attach to container (doesn't transform) instead of track (transforms)
+    // This ensures touch events work reliably on iOS after carousel slides
+    const container = document.querySelector('.carousel-track-container');
     
-    if (!track) return;
+    if (!container) return;
     
-    track.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-        isSwiping = true;
+    container.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        touchEndX = 0; // Reset end position
     }, { passive: true });
     
-    track.addEventListener('touchmove', (e) => {
-        // Optional: could add visual feedback during swipe
-    }, { passive: true });
-    
-    track.addEventListener('touchend', (e) => {
-        if (!isSwiping) return;
-        touchEndX = e.changedTouches[0].screenX;
+    container.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].clientX;
         handleSwipe();
-        isSwiping = false;
-    }, { passive: true });
-    
-    // Cancel swipe if touch is cancelled
-    track.addEventListener('touchcancel', () => {
-        isSwiping = false;
     }, { passive: true });
 }
 
