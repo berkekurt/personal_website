@@ -103,3 +103,54 @@ window.addEventListener('resize', () => {
 
 // Initialize carousel on page load
 document.addEventListener('DOMContentLoaded', initCarousel);
+
+/* TOUCH SWIPE SUPPORT */
+
+let touchStartX = 0;
+let touchEndX = 0;
+let isSwiping = false;
+
+function handleSwipe() {
+    const swipeThreshold = 50; // Minimum swipe distance in pixels
+    const diff = touchStartX - touchEndX;
+    
+    if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+            // Swipe left → go to next project
+            moveCarousel(1);
+        } else {
+            // Swipe right → go to previous project
+            moveCarousel(-1);
+        }
+    }
+}
+
+function initTouchSwipe() {
+    const track = document.querySelector('.carousel-track');
+    
+    if (!track) return;
+    
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        isSwiping = true;
+    }, { passive: true });
+    
+    track.addEventListener('touchmove', (e) => {
+        // Optional: could add visual feedback during swipe
+    }, { passive: true });
+    
+    track.addEventListener('touchend', (e) => {
+        if (!isSwiping) return;
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        isSwiping = false;
+    }, { passive: true });
+    
+    // Cancel swipe if touch is cancelled
+    track.addEventListener('touchcancel', () => {
+        isSwiping = false;
+    }, { passive: true });
+}
+
+// Initialize touch swipe on page load
+document.addEventListener('DOMContentLoaded', initTouchSwipe);
