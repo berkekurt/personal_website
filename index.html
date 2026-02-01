@@ -211,78 +211,126 @@
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/parent_categories.jpg" 
-                    alt="Next Purchase Prediction" 
-                    class="project-img"
-                    style="width: 70%; height: 70%;"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Predictive Analytics for E-commerce Product Replenishment</h2>
-                <p class="project-description">A project aimed at forecasting customer repurchase timing in e-commerce using machine learning techniques. Key innovations include:</p>
-                <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
-                    <li>Utilization of XGBoost and CatBoost models for predicting repurchase windows.</li>
-                    <li>Advanced feature engineering, including temporal analysis and product grouping via Jaccard similarity.</li>
-                    <li>Application of over 1 million transactional records to optimize inventory management and supply chain operations.</li>
-                </ul>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" style="width: 6rem; padding: 0.7rem;" onclick="location.href='https://github.com/Mfaytinn/YZV311_2425_150210324_150210329'">
-                        Github
-                    </button>
+        <div class="projects-carousel-wrapper">
+            <button class="carousel-arrow carousel-arrow-left" onclick="moveCarousel(-1)">&#8249;</button>
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img 
+                            src="./assets/nlp.png" 
+                            alt="Multilingual Idiom Identification" 
+                            class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Multilingual Idiom Identification (Turkish & Italian)</h2>
+                        <p class="project-description">A project focused on token-level identification of idiomatic multi-word expressions (MWEs) in Turkish and Italian sentences using a transformer-based sequence labeling pipeline. Key innovations include:</p>
+                        <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
+                            <li>Training on a combined multilingual corpus to improve coverage and generalization across languages.</li>
+                            <li>Language-specific BERT encoders with feature fusion from the last hidden layers, followed by a BiLSTM to capture long-range context.</li>
+                            <li>CRF decoding to enforce coherent BIO tag sequences and recover complete idiom spans.</li>
+                            <li>Two-phase optimization: task-specific training with frozen BERT, then gradual layer-wise unfreezing with reduced learning rates to fine-tune stably.</li>
+                            <li>Achieved 90 overall F1 in the course competition, demonstrating strong performance on morphologically rich language data.</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" style="width: 6rem; padding: 0.7rem;" onclick="location.href='https://github.com/NLP-YZV405E/Idiom_Identification_Model'">
+                                Github
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img 
+                            src="./assets/big_data.png" 
+                            alt="Distributed Image Similarity Search" 
+                            class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Distributed Image Similarity Search</h2>
+                        <p class="project-description">A big data project focused on detecting duplicate and near-duplicate images at scale for automated plagiarism/copyright checks, using deep image embeddings and distributed processing. Key innovations include:</p>
+                        <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
+                            <li>Extracting semantic image representations with DINOv3 and comparing them using cosine similarity for robust near-duplicate detection.</li>
+                            <li>Precomputing and L2-normalizing embeddings, then storing them in Parquet for fast, scalable Spark workflows.</li>
+                            <li>Designing a distributed pipeline in Apache Spark and Google Cloud Dataproc that supports top-k retrieval and threshold-based flagging.</li>
+                            <li>Benchmarking across multiple dataset sizes (up to ~157K images) and showing that distributed similarity search stays fast as the archive grows, enabling near real-time retrieval.</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" style="width: 10rem; padding: 0.7rem; cursor: default; pointer-events: none; opacity: 0.6;" disabled>
+                                Project Complete 
+                                GitHub Link Pending
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img 
+                            src="./assets/parent_categories.jpg" 
+                            alt="Next Purchase Prediction" 
+                            class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Predictive Analytics for E-commerce Product Replenishment</h2>
+                        <p class="project-description">A project aimed at forecasting customer repurchase timing in e-commerce using machine learning techniques. Key innovations include:</p>
+                        <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
+                            <li>Utilization of XGBoost and CatBoost models for predicting repurchase windows.</li>
+                            <li>Advanced feature engineering, including temporal analysis and product grouping via Jaccard similarity.</li>
+                            <li>Application of over 1 million transactional records to optimize inventory management and supply chain operations.</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" style="width: 6rem; padding: 0.7rem;" onclick="location.href='https://github.com/Mfaytinn/YZV311_2425_150210324_150210329'">
+                                Github
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img 
+                            src="./assets/styletts_emotion.png" 
+                            alt="Emotion Representation in TTS Models" 
+                            class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Emotion Representation in TTS Models</h2>
+                        <p class="project-description">A project focused on improving the emotional expressiveness of Text-to-Speech (TTS) systems by integrating emotion embeddings into the synthesis pipeline. Key innovations include:</p>
+                        <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
+                            <li>Leveraging StyleTTS2's diffusion-based architecture to generate high-quality, emotionally stable speech.</li>
+                            <li>Incorporating an emotion discriminator trained on datasets like RAVDESS to refine emotional accuracy in synthesized audio.</li>
+                            <li>Application of diverse datasets (RAVDESS, LibriTTS) for robust emotional modeling.</li>
+                            <li>Introducing emotion labels into the TTS pipeline and optimizing their integration using cross-entropy loss to enhance emotional fidelity in synthesized speech.</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" style="width: 10rem; padding: 0.7rem; cursor: default; pointer-events: none; opacity: 0.6;" disabled>
+                                Project Complete 
+                                GitHub Link Pending
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img 
+                            src="./assets/tables.png" 
+                            alt="Database Design and Implementation" 
+                            class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Database Design and Implementation</h2>
+                        <p class="project-description">A project aimed at designing a robust database system for music streaming platforms to manage vast amounts of data related to artists, albums, songs, playlists, and user interactions. Key features include:</p>
+                        <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
+                            <li>Development of a RESTful API using Flask-RESTX with SQLite backend, JWT-based authentication, and modular architecture for secure and efficient data management.</li>
+                            <li>Comprehensive CRUD operations for managing entities like users, playlists, songs, and albums, ensuring seamless interaction with the database.</li>
+                            <li>Integration of advanced relational modeling to maintain data integrity and enable complex queries like tracking user engagement or calculating total listening time per album.</li>
+                        </ul>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" style="width: 6rem; padding: 0.7rem;" onclick="location.href='https://github.com/EFCK/dbms_project'">
+                                Github
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/styletts_emotion.png" 
-                    alt="Emotion Representation in TTS Models" 
-                    class="project-img"
-                    style="width: 90%; height: 90%;"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Emotion Representation in TTS Models</h2>
-                <p class="project-description">A project focused on improving the emotional expressiveness of Text-to-Speech (TTS) systems by integrating emotion embeddings into the synthesis pipeline. Key innovations include:</p>
-                <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
-                    <li>Leveraging StyleTTS2's diffusion-based architecture to generate high-quality, emotionally stable speech.</li>
-                    <li>Incorporating an emotion discriminator trained on datasets like RAVDESS to refine emotional accuracy in synthesized audio.</li>
-                    <li>Application of diverse datasets (RAVDESS, LibriTTS) for robust emotional modeling.</li>
-                    <li>Introducing emotion labels into the TTS pipeline and optimizing their integration using cross-entropy loss to enhance emotional fidelity in synthesized speech.</li>
-                </ul>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" style="width: 10rem; padding: 0.7rem; cursor: default; pointer-events: none; opacity: 0.6;" disabled>
-                        Project Complete 
-                        GitHub Link Pending
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/tables.png" 
-                    alt="Database Design and Implementation" 
-                    class="project-img"
-                    style="width: 90%; height: 90%;"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Database Design and Implementation</h2>
-                <p class="project-description">A project aimed at designing a robust database system for music streaming platforms to manage vast amounts of data related to artists, albums, songs, playlists, and user interactions. Key features include:</p>
-                <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
-                    <li>Development of a RESTful API using Flask-RESTX with SQLite backend, JWT-based authentication, and modular architecture for secure and efficient data management.</li>
-                    <li>Comprehensive CRUD operations for managing entities like users, playlists, songs, and albums, ensuring seamless interaction with the database.</li>
-                    <li>Integration of advanced relational modeling to maintain data integrity and enable complex queries like tracking user engagement or calculating total listening time per album.</li>
-                </ul>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" style="width: 6rem; padding: 0.7rem;" onclick="location.href='https://github.com/EFCK/dbms_project'">
-                        Github
-                    </button>
-                </div>
-            </div>
+            <button class="carousel-arrow carousel-arrow-right" onclick="moveCarousel(1)">&#8250;</button>
         </div>
-        </div>
+        <div class="carousel-dots"></div>
         <img 
         src="./assets/arrow.png" 
         alt="Arrow icon" 

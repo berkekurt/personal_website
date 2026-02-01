@@ -396,6 +396,86 @@ article .icon {
     border-color: rgb(163,163,163);
 }
 
+/* PROJECT CAROUSEL */
+
+.projects-carousel-wrapper {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    flex: 1;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 300ms ease;
+}
+
+.carousel-track .details-container {
+    flex: 0 0 calc((100% - 4rem) / 3);
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.carousel-arrow {
+    background: white;
+    border: 1px solid rgb(163,163,163);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.carousel-arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(200,200,200);
+    cursor: pointer;
+    transition: background 300ms ease;
+    border: none;
+}
+
+.carousel-dot:hover {
+    background: rgb(150,150,150);
+}
+
+.carousel-dot.active {
+    background: rgb(53,53,53);
+}
+
+.project-description {
+    text-align: left;
+    padding: 0 1rem;
+}
+
 /* CONTACT */
 
 #contact {

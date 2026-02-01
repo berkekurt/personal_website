@@ -42,6 +42,13 @@
     .about-containers {
         margin-top: 0;
     }
+    /* Carousel: 2 projects visible */
+    .carousel-track .details-container {
+        flex: 0 0 calc((100% - 2rem) / 2);
+    }
+    .carousel-track {
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -96,5 +103,29 @@
     }
     .text-container {
         text-align: justify;
+    }
+    /* Carousel: 1 project visible */
+    .carousel-track .details-container {
+        flex: 0 0 100%;
+    }
+    .carousel-track {
+        gap: 0;
+    }
+    .carousel-arrow {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+    .projects-carousel-wrapper {
+        gap: 0.5rem;
+    }
+    .project-title {
+        font-size: 1.1rem;
+    }
+    .project-description {
+        font-size: 0.9rem;
+    }
+    .carousel-track .details-container ul {
+        font-size: 0.9rem;
     }
 }
