@@ -15,6 +15,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
                 <li><a href="#experience">Areas of Interest</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -31,6 +32,7 @@
         </div>
         <div class="menu-links">
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#work-experience" onclick="toggleMenu()">Work Experience</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Areas of Interest</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -44,7 +46,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Berke Kurt</h1>
-            <p class="section__text__p2">AI and Data Engineering Student</p>
+            <p class="section__text__p2">AI and Data Engineering Graduate</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                      Download CV
@@ -95,17 +97,62 @@
                 </div>
                 <div class="text-container">
                     <p> Welcome to my personal website! 👋
-                        I am Berke Kurt, an Artificial Intelligence and Data Engineering undergraduate at Istanbul Technical University. 
-                        My academic journey has been fueled by a deep passion for exploring the transformative potential of AI, 
+                        I am Berke Kurt, an Artificial Intelligence and Data Engineering graduate from Istanbul Technical University, currently working as an AI Intern at Netmera.
+                        My academic journey has been fueled by a deep passion for exploring the transformative potential of AI,
                         particularly in the realm of deep learning. I constantly engage in creating personal projects and conducting independent studies to deepen my understanding.
                         Feel free to explore my work, and don't hesitate to reach out—I'd be thrilled to connect and explore how we can create something amazing together!</p>
                 </div>
             </div>
         </div>
-        <img 
-        src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon arrow" 
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#work-experience'"
+        />
+    </section>
+    <section id="work-experience">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Work Experience</h1>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Jul 2026 – Present</div>
+                    <h3>AI Intern — Netmera</h3>
+                    <ul>
+                        <li>Developed RAG pipelines and LLM-powered chatbots for retrieving company-specific information and answering customer queries.</li>
+                        <li>Built customer journey simulation and predictive modeling solutions to support data-driven customer engagement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Aug – Oct 2025</div>
+                    <h3>Research Intern — Özyeğin University</h3>
+                    <ul>
+                        <li>Implemented wav2vec/Whisper-based classifiers and built a full dataset preprocessing pipeline for speech-based health research.</li>
+                        <li>Identified and corrected speaker-leakage issues in prior work, and conducted model evaluations.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">Jul – Aug 2025</div>
+                    <h3>AI Intern — Turkcell</h3>
+                    <ul>
+                        <li>Built a RAG pipeline using FAISS, BGE embeddings, and rerankers; optimized prompts with DSPy.</li>
+                        <li>Evaluated system performance on 9k samples and collaborated with engineering teams to improve retrieval quality.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
         onclick="location.href='./#experience'"
         />
     </section>
@@ -118,19 +165,9 @@
                     <p style="margin-bottom: 1.5rem;">These are the fields I'm passionate about exploring and developing expertise in. Each represents an area where I'm actively learning and applying my knowledge.</p>
                     <div class="article-container">
                         <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Deep Learning</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
                             class="icon"
                             />
                             <div>
@@ -138,9 +175,19 @@
                             </div>
                         </article>
                         <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Computer Vision</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
                             class="icon"
                             />
                             <div>
@@ -148,59 +195,9 @@
                             </div>
                         </article>
                         <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Data Mining</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Cognitive Neuroscience</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Game Theory</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Algorithms</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Database Systems</h3>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
                             class="icon"
                             />
                             <div>
@@ -208,9 +205,19 @@
                             </div>
                         </article>
                         <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Deep Learning</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
                             class="icon"
                             />
                             <div>
@@ -218,9 +225,9 @@
                             </div>
                         </article>
                         <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
                             class="icon"
                             />
                             <div>
@@ -228,13 +235,53 @@
                             </div>
                         </article>
                         <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="interest icon" 
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
                             class="icon"
                             />
                             <div>
-                                <h3>Computer Vision</h3>
+                                <h3>Data Mining</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Database Systems</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Algorithms</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Cognitive Neuroscience</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                            src="./assets/checkmark.png"
+                            alt="interest icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Game Theory</h3>
                             </div>
                         </article>
                     </div>
@@ -257,9 +304,41 @@
                 <div class="carousel-track">
                     <div class="details-container color-container">
                         <div class="article-container">
-                            <img 
-                            src="./assets/nlp.png" 
-                            alt="Multilingual Idiom Identification" 
+                            <img
+                            src="./assets/monocuar_depth_example.png"
+                            alt="Monocular Depth Estimation & Obstacle Detection"
+                            class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Monocular Depth Estimation & Obstacle Detection</h2>
+                        <p class="project-description">An end-to-end single-camera obstacle-detection pipeline that estimates depth from a single image and flags nearby obstacles. Key innovations include:</p>
+                        <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
+                            <li>Combined Depth Anything V2 and MiDaS with relative-to-metric depth alignment and distance-thresholded obstacle masking; benchmarked 4 models on the NYU Depth V2 dataset.</li>
+                            <li>Selected Depth Anything V2 ViT-S as the best accuracy-speed trade-off, running at 42 FPS on an A100 GPU.</li>
+                            <li>Fine-tuned Depth Anything V2 ViT-S on 30K RGB-D pairs via hyperparameter search and freezing-strategy ablations, reducing AbsRel by 40% and improving obstacle-detection F1 from 0.48 to 0.66.</li>
+                        </ul>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                            src="./assets/health_architecure.png"
+                            alt="Speech-Based Health Assessment with Multimodal Deep Learning"
+                            class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Speech-Based Health Assessment with Multimodal Deep Learning</h2>
+                        <p class="project-description">A multimodal multi-task deep learning system that assesses emotional and health-related states from speech by combining acoustic and linguistic features. Key innovations include:</p>
+                        <ul style="text-align: left; padding-left: 2rem; margin-bottom: 1rem;">
+                            <li>Combining Whisper-base (acoustic) and BERT (linguistic) representations via cross-attention for joint audio-text modeling.</li>
+                            <li>Multi-task learning setup to jointly predict multiple emotional/health-related states from a single model.</li>
+                            <li>Achieved a 0.6517 mean macro F1 on the held-out test set, improving on the baseline by 0.0445.</li>
+                        </ul>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                            src="./assets/nlp.png"
+                            alt="Multilingual Idiom Identification"
                             class="project-img"
                             />
                         </div>
@@ -294,18 +373,12 @@
                             <li>Designing a distributed pipeline in Apache Spark and Google Cloud Dataproc that supports top-k retrieval and threshold-based flagging.</li>
                             <li>Benchmarking across multiple dataset sizes (up to ~157K images) and showing that distributed similarity search stays fast as the archive grows, enabling near real-time retrieval.</li>
                         </ul>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" style="width: 10rem; padding: 0.7rem; cursor: default; pointer-events: none; opacity: 0.6;" disabled>
-                                Project Complete 
-                                GitHub Link Pending
-                            </button>
-                        </div>
                     </div>
                     <div class="details-container color-container">
                         <div class="article-container">
-                            <img 
-                            src="./assets/parent_categories.jpg" 
-                            alt="Next Purchase Prediction" 
+                            <img
+                            src="./assets/parent_categories.jpg"
+                            alt="Predictive Analytics for E-commerce Product Replenishment"
                             class="project-img"
                             />
                         </div>
@@ -338,17 +411,11 @@
                             <li>Application of diverse datasets (RAVDESS, LibriTTS) for robust emotional modeling.</li>
                             <li>Introducing emotion labels into the TTS pipeline and optimizing their integration using cross-entropy loss to enhance emotional fidelity in synthesized speech.</li>
                         </ul>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" style="width: 10rem; padding: 0.7rem; cursor: default; pointer-events: none; opacity: 0.6;" disabled>
-                                Project Complete 
-                                GitHub Link Pending
-                            </button>
-                        </div>
                     </div>
                     <div class="details-container color-container">
                         <div class="article-container">
-                            <img 
-                            src="./assets/tables.png" 
+                            <img
+                            src="./assets/tables.png"
                             alt="Database Design and Implementation" 
                             class="project-img"
                             />
@@ -405,12 +472,13 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
+                    <li><a href="#work-experience">Work Experience</a></li>
                     <li><a href="#experience">Areas of Interest</a></li>
                     <li><a href="#projects">Projects</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Berke Kurt</p>
+        <p>Copyright &#169; 2026 Berke Kurt</p>
     </footer>
     <script src="script.js"></script>
 </body>
